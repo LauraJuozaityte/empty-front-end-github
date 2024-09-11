@@ -7,6 +7,9 @@ export function App() {
         <p>Text paragraph 1</p>
         <p>Text paragraph 2</p>
         <p>Text paragraph 3</p>
+
+        <p>Text paragraph 4 - develop</p>
+
       </header>
     </div>
   );
