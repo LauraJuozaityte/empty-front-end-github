@@ -4,7 +4,7 @@ import { Nav } from './Nav';
 import { Header } from './Header';
 import '../styles/styles.css';
 
-export function Layout({ children }) {
+export function LayoutMain({ children }) {
   return (
     <div className="layout-container">
       <Header />

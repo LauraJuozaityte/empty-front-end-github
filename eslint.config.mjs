@@ -17,10 +17,13 @@ export default [
   {
     plugins: { prettier: pluginPrettier },
     rules: {
-      "prettier/prettier": "error",
+      "prettier/prettier": "warn",
       "react/prop-types": "off",
       "@typescript-eslint/ban-ts-comment": "off",
       "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/no-unused-vars": "warn",
+      "no-unused-vars": "warn",
+      "no-multiple-empty-lines": ["warn", { max: 2 }],
     },
   },
   {

@@ -64,7 +64,8 @@ nav ul li a:hover {
     background-color: #555555; 
 }
 
-.auth-container {
+.auth-signin-container,
+.auth-register-container {
     background-color: white;
     padding: 20px;
     border-radius: 12px;
@@ -73,12 +74,14 @@ nav ul li a:hover {
     margin: 20px;
 }
 
-.auth-container h2 {
+.auth-register-container h2,
+.auth-signin-container h2 {
     text-align: center;
     color: #000000;
 }
 
-.auth-container input {
+.auth-register-container input,
+.auth-signin-container input {
     background-color: rgb(240, 240, 240);
     width: 100%;
     padding: 10px;
@@ -203,7 +206,7 @@ button {
 
 .btn-style {
     display: block;  
-    width: 80%;
+    width: 150px;
     color: #FFFFFF; 
     padding: 10px;
     border: none;
@@ -219,11 +222,13 @@ button {
 .dark-btn, 
 .dark-table-btn, 
 .profile-btn,
+.auth-btn,
 .btn-style { 
     background-color: #363636;  
 }
 
-.dark-btn { 
+.dark-btn,
+.auth-btn { 
     margin: 0 auto;  
 }
 
@@ -238,6 +243,7 @@ button {
 .dark-btn, 
 .profile-btn, 
 .dark-table-btn:hover,
+.auth-btn,
 .btn-style {
     background-color: #555555;
 }
@@ -246,6 +252,10 @@ button {
     display: inline-block;
     margin-left: 0;
     width: 120px;  
+}
+
+.auth-btn{
+    width: 150px;
 }
 
 
@@ -322,4 +332,11 @@ footer {
     background-color: #363636;
     color: #FFFFFF;  
     box-sizing: border-box;
+}
+
+.errorMessage{
+    font-size: 14px;    
+    margin-bottom: 20px;
+    color: #d64444;
+
 }

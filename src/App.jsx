@@ -4,7 +4,8 @@ import { Login } from './pages/Login';
 import { Home } from './pages/Home';
 import { Movies } from './pages/Movies';
 import { Profile } from './pages/Profile';
-import { Layout } from './components/Layout';
+import { LayoutMain } from './components/LayoutMain';
+import { LayoutAuth } from './components/LayoutAuth';
 
 export function App() {
   return (
@@ -12,34 +13,34 @@ export function App() {
       <Route
         path="/"
         element={
-          <Layout>
+          <LayoutMain>
             <Home />
-          </Layout>
+          </LayoutMain>
         }
       />
       <Route path="/home" element={<Navigate to="/" />} />
       <Route
         path="/login"
         element={
-          <Layout>
+          <LayoutAuth>
             <Login />
-          </Layout>
+          </LayoutAuth>
         }
       />
       <Route
         path="/movies"
         element={
-          <Layout>
+          <LayoutMain>
             <Movies />
-          </Layout>
+          </LayoutMain>
         }
       />
       <Route
         path="/profile"
         element={
-          <Layout>
+          <LayoutMain>
             <Profile />
-          </Layout>
+          </LayoutMain>
         }
       />
     </Routes>

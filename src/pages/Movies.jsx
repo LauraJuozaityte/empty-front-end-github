@@ -23,7 +23,7 @@ export function Movies() {
 
   return (
     <div className="main-container">
-      <h2>Available Movies</h2>
+      <h2>Your Movies</h2>
       <table>
         <thead>
           <tr>
