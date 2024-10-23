@@ -33,8 +33,23 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "prettier/prettier": "warn",
+      "react/prop-types": "off",
+      "no-unused-vars": "warn"
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "endOfLine": "auto"
   },
   "browserslist": {
     "production": [

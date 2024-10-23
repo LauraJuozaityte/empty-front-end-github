@@ -1,15 +1,15 @@
 export const user1 = {
   name: 'John',
   surName: 'Newman',
-  email: 'john.newman@mail.com',
-  password: 'Password.123',
+  email: 'John.newman1@mail.com',
+  password: 'John.newman1@mail.com',
 };
 
 export const user2 = {
   name: 'Mary',
   surName: 'Oldman',
-  email: 'mary.oldman@gmail.com',
-  password: 'Password.123',
+  email: 'Mary.oldman2@gmail.com',
+  password: 'Mary.oldman2@gmail.com',
 };
 
 export const user3 = {

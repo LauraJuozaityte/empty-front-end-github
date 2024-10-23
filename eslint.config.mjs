@@ -9,6 +9,7 @@ export default [
   { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
   { files: ["**/*.js"], languageOptions: { sourceType: "script" } },
   { languageOptions: { globals: { ...globals.browser, ...globals.jest } } },
+
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
